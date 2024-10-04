@@ -3,7 +3,7 @@ import time
 from asyncua import Client
 
 async def main():
-    url = "opc.tcp://localhost:4840/freeopcua/server/" 
+    url = "opc.tcp://192.168.1.6:4840/freeopcua/server/" 
     async with Client(url=url) as client:
         while True:
             try:
